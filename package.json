@@ -9,6 +9,7 @@
     "check-types": "npm run check-types --workspace=apps/web"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^3.0.0",
     "prettier": "3.9.6",
     "turbo": "^2.11.4",
     "typescript": "7.0.2"
@@ -16,5 +17,9 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "jose": "^6.2.12"
+  }
 }

@@ -1,4 +1,3 @@
-import { LoginForm } from "@/components/auth-ui/login-form";
 import Login from "@/components/login-2";
 
 export default function LoginPage() {

@@ -20,12 +20,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+import { AuthProvider } from "@/context/auth-context";
+import { Toaster } from "sonner";
+
 export const metadata: Metadata = {
-  title: "Fluo",
-  description: "Wise design system implemented in Next.js",
+  title: "Fluo — Subscription Management System",
+  description: "Manage customers, subscriptions, plans, renewals, upgrades, cancellations and payments with Wise design system",
   openGraph: {
-    title: "Fluo",
-    description: "Wise design system implemented in Next.js",
+    title: "Fluo — Subscription Management System",
+    description: "Manage customers, subscriptions, plans, renewals, upgrades, cancellations and payments with Wise design system",
   },
 };
 
@@ -46,8 +49,13 @@ export default function RootLayout({
         manrope.variable,
       )}
     >
-      <body className="min-h-full flex flex-col">
-        <TooltipProvider>{children}</TooltipProvider>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <AuthProvider>
+          <TooltipProvider>
+            {children}
+            <Toaster richColors position="top-right" />
+          </TooltipProvider>
+        </AuthProvider>
       </body>
     </html>
   );

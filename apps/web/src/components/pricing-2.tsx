@@ -26,7 +26,7 @@ export default function Pricing() {
                                 variant="outline"
                                 className="w-full rounded-full"
                                 nativeButton={false}
-                                render={<Link href="#">Get Started</Link>}
+                                render={<Link href="/sign-up">Get Started</Link>}
                             />
                         </div>
 
@@ -56,7 +56,7 @@ export default function Pricing() {
                             <Button
                                 className="w-full rounded-full bg-[#9fe870] text-[#0e0f0c]"
                                 nativeButton={false}
-                                render={<Link href="#">Get Started</Link>}
+                                render={<Link href="/sign-up">Get Started</Link>}
                             />
                         </div>
 
@@ -86,7 +86,7 @@ export default function Pricing() {
                                 className="w-full rounded-full"
                                 variant="outline"
                                 nativeButton={false}
-                                render={<Link href="#">Get Started</Link>}
+                                render={<Link href="/sign-up">Get Started</Link>}
                             />
                         </div>
 

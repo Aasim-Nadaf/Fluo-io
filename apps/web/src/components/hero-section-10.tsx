@@ -19,9 +19,14 @@ export default function HeroSection() {
                                 <p className="text-[#454745] text-balance text-lg">Leads, deals, tasks, and conversations. </p>
 
                                 <Button
-                                    className="w-fit rounded-full bg-[#9fe870] text-[#0e0f0c] hover:bg-[#9fe870]/90"
+                                    className="w-fit rounded-full bg-[#9fe870] text-[#0e0f0c] hover:bg-[#9fe870]/90 font-bold"
                                     nativeButton={false}
-                                    render={<Link href="#">Get Started</Link>}
+                                    render={
+                                        <Link href="/sign-up" className="flex items-center gap-2">
+                                            <span>Get Started</span>
+                                            <ArrowRight className="size-4" />
+                                        </Link>
+                                    }
                                 />
                             </div>
                         </div>
