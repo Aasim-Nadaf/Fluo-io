@@ -1,0 +1,20 @@
+{
+  "name": "fluo",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspace=apps/web",
+    "dev": "npm run dev --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "npm run check-types --workspace=apps/web"
+  },
+  "devDependencies": {
+    "prettier": "3.9.6",
+    "turbo": "^2.11.4",
+    "typescript": "7.0.2"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}

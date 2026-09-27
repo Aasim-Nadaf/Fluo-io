@@ -1,0 +1,7 @@
+{
+  "name": "Fluo",
+  "description": "Wise design system implemented in Next.js",
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
